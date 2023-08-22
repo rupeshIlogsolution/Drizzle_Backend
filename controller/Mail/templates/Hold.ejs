@@ -1,0 +1,39 @@
+<%- include('includes/header'); -%>
+<p><b>Hi <%=username%></b></p>
+<p>We hope you are doing great. We have some good news for you!</p>
+<p>The status for your ticket number <%=TicketNumber%> has been updated to <%=TicketStatus%>.</p>
+
+<table>
+   
+    <tr>
+        <td>Subject :</td>
+        <td><%=subject%></td>
+    </tr>
+    <tr>
+        <td>Ticket Number :</td>
+        <td><%=TicketNumber%></td>
+    </tr>
+    <tr>
+        <td>Date :</td>
+        <td><%=Ticketdate%></td>
+    </tr>
+    <tr>
+        <td>Ticket Type :</td>
+        <td><%=TicketType%></td>
+    </tr>
+    <tr>
+        <td>Ticket Description :</td>
+        <td><%=TicketDiscription%></td>
+    </tr>
+   
+</table>
+
+<p>Our team is working for its immediate resolution.</p>
+<p>If you have any additional information that you think will help us to assist you, please reply to this email.
+    If it’s an emergency, feel free to give us a call at 9205390744 or 9205390764.</p>
+<p>Thanks again for contacting us,<br/>
+    Technical Support Desk <br/>
+    <b>Drizzle</b></p>
+
+
+<%- include('includes/footer'); -%>

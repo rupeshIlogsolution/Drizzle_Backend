@@ -1,0 +1,40 @@
+<%- include('includes/header'); -%>
+<p><b>Hi </b></p>
+<p>An invoice <%=invoiceno%> for <%=reference_no%> is updated in our records.</p>
+
+<% console.log("test") %> 
+
+<table>
+
+    <tr>
+        <td>Invoice Number :</td>
+        <td><%=invoiceno%></td>
+    </tr>
+    <tr>
+        <td>Invoice Date :</td>
+        <td><%=invoice_date%></td>
+    </tr>
+    <tr>
+        <td>Invoice Received Date :</td>
+        <td><%=invoice_receive_date%></td>
+    </tr>
+    <tr>
+        <td>Invoice Amount :</td>
+        <td><%=invoice_amount%></td>
+    </tr>
+    <tr>
+        <td>Invoice Link:</td>
+        <td><%=upload ? upload : ''%></td>
+    </tr>
+    
+
+</table>
+
+
+
+<p>Thanks!!<br/>
+    Technical Support Desk<br/>
+    <b>Drizzle</b></p>
+
+
+<%- include('includes/footer'); -%>

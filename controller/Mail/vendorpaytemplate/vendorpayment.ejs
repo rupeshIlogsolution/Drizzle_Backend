@@ -1,0 +1,56 @@
+<%- include('includes/header'); -%>
+<p><b>Hi </b></p>
+<p>Payment against invoice <%=invoice_number%>for <%=referance_no%> is updated in our records.</p>
+
+
+<table>
+
+    <tr>
+        <td>Invoice Number :</td>
+        <td><%=invoice_number%></td>
+    </tr>
+    <tr>
+        <td>Invoice Date :</td>
+        <td><%=invoice_date%></td>
+    </tr>
+    <tr>
+        <td>Invoice Received Date :</td>
+        <td><%=invoice_receive_date%></td>
+    </tr>
+    <tr>
+        <td>Invoice Amount :</td>
+        <td><%=invoice_amount%></td>
+    </tr>
+    <tr>
+        <td>Invoice Link:</td>
+        <td><%=invoice_upload%></td>
+    </tr>
+    <tr>
+        <td>Payment Date :</td>
+        <td><%=payment_date%></td>
+    </tr>
+    <tr>
+        <td>Payment Details:</td>
+        <td><%=payment_details%></td>
+    </tr>
+    <tr>
+        <td>Payment Amount:</td>
+        <td><%=payment_amount%></td>
+    </tr>  <tr>
+        <td>Payment link:</td>
+        <td><%=payment_link%></td>
+    </tr>
+    
+</table>
+
+<p>
+    Please update your records accordingly.<br/>
+    In case of payment by cheque, “pickup”-“courier”-“bank deposit” intimation will be given to you by IT Department in separate communication.
+</p>
+
+<p>Thanks!!<br/>
+    Technical Support Desk<br/>
+    <b>Drizzle</b></p>
+
+
+<%- include('includes/footer'); -%>
