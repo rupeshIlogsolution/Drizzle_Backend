@@ -135,7 +135,6 @@ const Recurring_Pending_Invoice = async (req, res) => {
         
     }
     let startdate = `${year}-${month}-01`
-    console.log(billling_freq,startdate)
 
     try {
         await sql.connect(sqlConfig)
