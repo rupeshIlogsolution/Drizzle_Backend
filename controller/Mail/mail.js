@@ -98,7 +98,6 @@ const VendorCreateEmail = async(req,res)=>{
 
 const VendorPaymentEmail = async(req,res)=>{
   const message = req.body.message;
-  
     subject = `Payment Update - (${message.invoice_number} by ${message.vendor_name} for ${message.referance_no})`
     var html = await ejs.renderFile(path.join(__dirname, `./vendorpaytemplate/vendorpayment.ejs`),message)
 
@@ -119,8 +118,15 @@ const VendorPaymentEmail = async(req,res)=>{
       cc:['support@awlindia.com','support@ilogsolution.com','finance@awlindia.com'],
       subject: subject, // Subject line
       html: html, // html body
-     
     })
+    
+    // let info = await transporter.sendMail({
+    //   from: 'alerts@godrizzle.com', // sender address
+    //   to: `yuvraj.singh@ilogsolution.com`, // list of receivers
+    //   cc:['rupesh.kumar@ilogsolution.com'],
+    //   subject: subject, // Subject line
+    //   html: html, // html body
+    // })
     res.send(info)
 
   }

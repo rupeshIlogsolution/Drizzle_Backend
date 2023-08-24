@@ -13,7 +13,8 @@ const nodemailer = require('nodemailer');
 
 const port = 2008;
 
-const job = schedule.scheduleJob(' 0 20 18 * * 0-7 ', async function (req, res) {
+// const job = schedule.scheduleJob(' 0 20 18 * * 0-7 ', async function (req, res) {
+  const job = schedule.scheduleJob(' 0 20 18 * * 0-7 ', async function (req, res) {
   var date = new Date();
     var day = date.getDate();
     var month = date.getMonth() + 1;
